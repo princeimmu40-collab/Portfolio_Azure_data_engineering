@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kojja Gopi — Azure Data Engineer</title>
+<meta name="description" content="Portfolio of Kojja Gopi, Azure Data Engineer specializing in ETL/ELT pipelines, legacy-to-cloud data migration, and healthcare claims platforms.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#top" class="brand"><span class="brand-mark">KG</span>Kojja Gopi</a>
+    <nav class="links" id="navLinks">
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="nav-cta">Let's talk</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation menu" aria-expanded="false"><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="eyebrow">Available for new opportunities</span>
+        <h1>Kojja Gopi</h1>
+        <p class="role">Azure Data Engineer&nbsp;| SQL Server &amp; ADF Developer</p>
+        <p class="tagline">4+ years of experience building and maintaining robust ETL/ELT pipelines, legacy-to-cloud data migration, and high-performance data architectures for healthcare platforms.</p>
+
+        <ul class="hero-contact">
+          <li><span class="c-ico">@</span><a href="mailto:gopikavadi3@gmail.com">gopikavadi3@gmail.com</a></li>
+          <li><span class="c-ico">#</span><a href="tel:+918639641523">+91 86396 41523</a></li>
+          <li><span class="c-ico">°</span><span>Hyderabad, India</span></li>
+        </ul>
+
+        <div class="btn-row">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="resume.pdf" download class="btn btn-ghost" id="resumeBtn">Download Resume</a>
+        </div>
+      </div>
+
+      <div class="pipeline-card" aria-hidden="true">
+        <div class="cap">
+          <span>claims-pipeline.status</span>
+          <span class="dot-row"><span></span><span></span><span></span></span>
+        </div>
+
+        <div class="pnode">
+          <span class="idx">1</span>
+          <div><div class="label">QNXT Legacy System</div><div class="sub">Molina Healthcare claims source</div></div>
+        </div>
+        <div class="pipe-connector"></div>
+        <div class="pnode">
+          <span class="idx">2</span>
+          <div><div class="label">Azure Data Factory</div><div class="sub">copy · lookup · transform</div></div>
+        </div>
+        <div class="pipe-connector"></div>
+        <div class="pnode">
+          <span class="idx">3</span>
+          <div><div class="label">SQL Staging Layer</div><div class="sub">validated &amp; reconciled</div></div>
+        </div>
+        <div class="pipe-connector"></div>
+        <div class="pnode">
+          <span class="idx">4</span>
+          <div><div class="label">AI Adjudication</div><div class="sub">367 claim edits</div></div>
+        </div>
+
+        <div class="status">Reconciliation passed — 100% completeness</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFESSIONAL SUMMARY -->
+  <section id="summary">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Professional Summary</span>
+        <h2>Four years deep in the Azure data ecosystem</h2>
+      </div>
+      <div class="summary-panel">
+        <p>I build and maintain data platforms for healthcare claims processing, working primarily inside the Microsoft Azure ecosystem — Azure Data Factory, Logic Apps, and SQL Server. Most of my work centers on <strong>Molina Healthcare's QNXT claims platform</strong>: migrating claims data out of legacy systems, mapping it into new architectures, and making sure every record that moves is validated and reconciled before it reaches production.</p>
+        <p>Alongside day-to-day pipeline and performance-tuning work, I've been self-directed in upskilling into <strong>Azure Databricks and PySpark</strong>, extending my SQL Server background into distributed, big-data processing patterns — because legacy-to-cloud migration is only getting bigger, not smaller.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Technical Skills</span>
+        <h2>The stack behind every pipeline</h2>
+        <p>Filter by category to see where each tool fits.</p>
+      </div>
+
+      <div class="filter-row" role="tablist" aria-label="Filter skills by category">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="cloud" role="tab" aria-selected="false">Cloud &amp; Big Data</button>
+        <button class="filter-btn" data-filter="db" role="tab" aria-selected="false">Databases &amp; Query Optimization</button>
+        <button class="filter-btn" data-filter="etl" role="tab" aria-selected="false">ETL Tools &amp; Migration</button>
+        <button class="filter-btn" data-filter="process" role="tab" aria-selected="false">Programming &amp; Process</button>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card" data-category="cloud">
+          <h3>Cloud &amp; Big Data</h3>
+          <span class="cat-note">Orchestration and distributed processing on Azure</span>
+          <div class="tag-row">
+            <span class="tag">Azure Data Factory (ADF)</span>
+            <span class="tag">Azure Logic Apps</span>
+            <span class="tag">Azure Databricks</span>
+            <span class="tag">PySpark</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="db">
+          <h3>Databases &amp; Query Optimization</h3>
+          <span class="cat-note">Where the logic and performance live</span>
+          <div class="tag-row">
+            <span class="tag">Microsoft SQL Server 2012/2016</span>
+            <span class="tag">T-SQL</span>
+            <span class="tag">Stored Procedures</span>
+            <span class="tag">Functions</span>
+            <span class="tag">Triggers</span>
+            <span class="tag">CTEs</span>
+            <span class="tag">Indexes</span>
+            <span class="tag">Views</span>
+            <span class="tag">Performance Tuning</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="etl">
+          <h3>ETL Tools &amp; Migration</h3>
+          <span class="cat-note">Getting data from source to target, correctly</span>
+          <div class="tag-row">
+            <span class="tag">SSIS — Package Debugging</span>
+            <span class="tag">Lookup</span>
+            <span class="tag">Conditional Split</span>
+            <span class="tag">Merge Join</span>
+            <span class="tag">Source-to-Target Mapping</span>
+            <span class="tag">Data Validation &amp; Reconciliation</span>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="process">
+          <h3>Programming &amp; Process</h3>
+          <span class="cat-note">Writing logic and shipping it safely</span>
+          <div class="tag-row">
+            <span class="tag">Python</span>
+            <span class="tag">Agile/Scrum</span>
+            <span class="tag">RFC &amp; Change Management</span>
+            <span class="tag">Production Support</span>
+            <span class="tag">Technical Documentation</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Featured Projects</span>
+        <h2>Data processing &amp; loading, built for people who rely on it</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <h3>ENSO AI — Molina Healthcare Claims Pipeline</h3>
+            <span class="badge">367 claim edits</span>
+          </div>
+          <p class="project-desc">Designed and developed end-to-end Azure Data Factory pipelines to migrate and integrate claims data from the QNXT source system into a custom database, enabling AI-driven claims adjudication.</p>
+          <button class="details-toggle" aria-expanded="false">Show key highlights <span class="chev">▾</span></button>
+          <ul class="details-list">
+            <li>Source-to-target mapping across legacy and cloud schemas</li>
+            <li>Automated data validation and reconciliation checks post-load</li>
+            <li>Pipeline performance tuning to meet strict processing SLAs</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <h3>QNXT Platform Upgrade (v5.9 → v6.0)</h3>
+            <span class="badge">Migration &amp; QA</span>
+          </div>
+          <p class="project-desc">Prepared and tested database scripts, validated input/output file generation and data integrity across the platform migration, and managed RFCs and QA sign-offs.</p>
+          <button class="details-toggle" aria-expanded="false">Show key highlights <span class="chev">▾</span></button>
+          <ul class="details-list">
+            <li>Script preparation and regression testing across the upgrade path</li>
+            <li>Input/output file validation to confirm data integrity end-to-end</li>
+            <li>RFC ownership and coordination of QA sign-off with stakeholders</li>
+          </ul>
+        </article>
+
+        <article class="project-card">
+          <div class="project-card-top">
+            <h3>Advent CAVO JSON Data Extraction</h3>
+            <span class="badge">Vendor Integration</span>
+          </div>
+          <p class="project-desc">Built SQL Server packages to identify high-dollar claims, stage the underlying data, and generate structured JSON output files for downstream vendor systems via FTP.</p>
+          <button class="details-toggle" aria-expanded="false">Show key highlights <span class="chev">▾</span></button>
+          <ul class="details-list">
+            <li>Logic to flag and isolate high-dollar claims for review</li>
+            <li>Staging tables built to support repeatable, auditable extraction runs</li>
+            <li>Structured JSON generation and automated FTP hand-off to vendor systems</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Professional Experience</span>
+        <h2>Where the work happened</h2>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-entry">
+          <span class="tl-dates">Dec 2021 — Present</span>
+          <h3>Software Engineer — SQL &amp; ADF Developer</h3>
+          <span class="tl-org">Infinite Computer Solutions, Inc., Hyderabad</span>
+          <div class="tl-highlights">
+            <div class="tl-h-item"><span class="mk">▸</span><span><b>ENSO AI:</b> built the ADF and SQL pipeline layer that feeds Molina Healthcare claims data into an AI-driven adjudication engine, supporting 367 claim edits end-to-end.</span></div>
+            <div class="tl-h-item"><span class="mk">▸</span><span><b>QNXT Upgrade (v5.9 → v6.0):</b> tested database scripts and validated data integrity across the legacy claims platform migration.</span></div>
+            <div class="tl-h-item"><span class="mk">▸</span><span><b>Advent CAVO JSON extractions:</b> developed SQL packages to stage high-dollar claims and generate structured JSON for downstream vendor systems.</span></div>
+            <div class="tl-h-item"><span class="mk">▸</span><span><b>Recognition:</b> two-time recipient of the Monthly Award, FY 2023–2025, for project delivery excellence.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="section-kicker">Education &amp; Achievements</span>
+        <h2>Foundation &amp; recognition</h2>
+      </div>
+
+      <div class="edu-grid">
+        <div class="edu-card">
+          <span class="edu-tag">Education</span>
+          <h3>B.Tech, Electronics &amp; Communication Engineering</h3>
+          <p>Loyola Institute of Technological Management</p>
+          <span class="edu-score">75.0%</span>
+        </div>
+        <div class="edu-card">
+          <span class="edu-tag">Achievement</span>
+          <h3>Two-Time Monthly Award Winner</h3>
+          <p>Infinite Computer Solutions, Inc. — recognized for project delivery excellence, FY 2023–2025.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div>
+        <span class="section-kicker">Contact</span>
+        <h2>Let's talk data pipelines.</h2>
+        <p>Open to Azure Data Engineering roles, ETL/ELT consulting, and legacy-to-cloud migration projects.</p>
+        <div class="social-row">
+          <a href="#" class="social-btn">LinkedIn</a>
+          <a href="#" class="social-btn">GitHub</a>
+        </div>
+      </div>
+      <ul class="contact-list">
+        <li><span class="c-ico">@</span><a href="mailto:gopikavadi3@gmail.com">gopikavadi3@gmail.com</a></li>
+        <li><span class="c-ico">#</span><a href="tel:+918639641523">+91 86396 41523</a></li>
+        <li><span class="c-ico">°</span><span>Hyderabad, India</span></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Kojja Gopi. Built with HTML, CSS &amp; JavaScript.</span>
+      <span>Designed for data engineering work that has to hold up in production.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
